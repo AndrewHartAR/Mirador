@@ -9,7 +9,7 @@
 <img src="demo.gif" alt="Mirador demo" title="Mirador demo" width="300"/>
 </br>
 
-Mirador is built by [Andrew Hart](https://twitter.com/andrewhartar), who pioneered AR navigation and built the largest open-source project for Apple’s first AR platform, ARKit. Andrew is now founder of [Hyper](https://HyperAR.com), bringing the same technology to retail stores.
+Mirador is built by [Andrew Hart](https://andrewhart.me), who pioneered AR navigation and built the largest open-source project for Apple’s first AR platform, ARKit. At the time of development, Andrew was founder of [Hyper](https://HyperAR.com), a startup which brought the same technology to IKEA stores.
 
 ## What is Mirador
 There are many use-cases for highlighting points of interest on a skyline in AR: tourism apps, mountain ranges, city viewpoints, observation decks etc.. I receive messages quite often from people who used my first library, asking "How do I do this? There are still some technical challenges in the way."
@@ -170,9 +170,9 @@ This is v1. There are endless opportunities to take Mirador further. Feel free t
 
 ## Credit
 
-Mirador was built by [Andrew Hart](https://twitter.com/AndrewHartAR). A common follow-up question I get is "this is great - can this be integrated with retail stores?" That's the purpose of my startup, [Hyper](https://HyperAR.com). Mirador is free, open-source for Point of Interest applications. Hyper is our full indoor spatial platform for retail (indoor maps, precise location, AR navigation etc.)
+Mirador was built by [Andrew Hart](https://AndrewHart.me). A common follow-up question I get is "this is great - can this be integrated with indoors?" That's what we set out to do at [Hyper](https://HyperAR.com). Mirador is free, open-source for Point of Interest applications. Hyper is our full indoor spatial platform for retail (indoor maps, precise location, AR navigation etc.)
 
-Massive thanks to [MaxxFrazer](https://twitter.com/maxxfrazer), the king of RealityKit, who helped with many of the rendering issues.
+Massive thanks to [MaxxFrazer](https://twitter.com/maxxfrazer), the king of RealityKit, who helped with many of the rendering issues, and now works on visionOS at Apple.
 
 ## License
 Mirador is available under MIT license.
