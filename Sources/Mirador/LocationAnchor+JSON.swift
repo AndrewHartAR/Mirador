@@ -33,7 +33,13 @@ extension LocationAnchor {
 
         do {
             let geoJSONData = try decoder.decode(GeoJSONData.self, from: jsonData)
-            
+
+            guard geoJSONData.anchor.coordinate.count == 2,
+                  geoJSONData.points_of_interest.allSatisfy({ $0.coordinate.count == 2 }) else {
+                print("Error decoding JSON: coordinates must contain [longitude, latitude]")
+                return nil
+            }
+
             let anchorCoordinate = Coordinate(latitude: geoJSONData.anchor.coordinate[1], longitude: geoJSONData.anchor.coordinate[0])
             let anchorLocation = Location(coordinate: anchorCoordinate, altitude: geoJSONData.anchor.altitude)
             let anchor = LocationAnchor(name: geoJSONData.anchor.name, physicalWidth: geoJSONData.anchor.physical_width, location: anchorLocation, bearing: geoJSONData.anchor.bearing_degrees.degreesToRadians, orientation: geoJSONData.anchor.orientation)
